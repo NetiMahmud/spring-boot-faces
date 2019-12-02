@@ -2,3 +2,7 @@
 *.iml
 data/
 /target/
+/*.settings
+.settings/org.eclipse.core.resources.prefs
+/.project
+/.classpath
