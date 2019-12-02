@@ -6,3 +6,5 @@ data/
 .settings/org.eclipse.core.resources.prefs
 /.project
 /.classpath
+/src/main/webapp/WEB-INF/classes/tutorial-link.txt
+/src/main/webapp/WEB-INF/classes/META-INF/
