@@ -67,6 +67,13 @@
 			<artifactId>primefaces</artifactId>
 			<version>6.1</version>
 		</dependency>
+		
+		<!-- Extra Dependencies -->
+		<dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <scope>provided</scope>
+        </dependency>
 
 		<!-- Database dependencies -->
 		<dependency>
@@ -79,12 +86,16 @@
 
 	<!-- Package as an executable jar -->
 	<build>
-		<outputDirectory>src/main/webapp/WEB-INF/classes</outputDirectory>
+		
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>
+					<mainClass>com.auth0.samples.bootfaces.Application</mainClass>
+				</configuration>
 			</plugin>
 		</plugins>
+		<!-- <outputDirectory>src/main/webapp/WEB-INF/classes</outputDirectory> -->
 	</build>
 </project>
